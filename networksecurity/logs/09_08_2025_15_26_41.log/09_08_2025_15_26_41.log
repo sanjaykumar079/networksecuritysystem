@@ -1,0 +1,36 @@
+[ 2025-09-08 15:26:43,857 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-09-08 15:26:43,859 ] 107 dagshub - INFO - Accessing as sanjaykumar079
+[ 2025-09-08 15:26:44,527 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaykumar079/networksecuritysystem "HTTP/1.1 200 OK"
+[ 2025-09-08 15:26:45,076 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-09-08 15:26:45,078 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaykumar079/networksecuritysystem"
+[ 2025-09-08 15:26:45,095 ] 107 dagshub - INFO - Repository sanjaykumar079/networksecuritysystem initialized!
+[ 2025-09-08 15:26:57,825 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-08 15:26:58,928 ] 66 root - INFO - Performed train test split on the dataframe
+[ 2025-09-08 15:26:58,928 ] 68 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-09-08 15:26:58,929 ] 76 root - INFO - Exporting train and test file path.
+[ 2025-09-08 15:26:58,964 ] 85 root - INFO - Exported train and test file path.
+[ 2025-09-08 15:26:58,964 ] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\09_08_2025_15_26_41\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\09_08_2025_15_26_41\\data_ingestion\\ingested\\test.csv')
+[ 2025-09-08 15:26:58,968 ] 55 root - INFO - Initiate the data Validation
+[ 2025-09-08 15:26:59,013 ] 32 root - INFO - Required number of columns:2
+[ 2025-09-08 15:26:59,013 ] 33 root - INFO - Data frame has columns:31
+[ 2025-09-08 15:26:59,013 ] 32 root - INFO - Required number of columns:2
+[ 2025-09-08 15:26:59,013 ] 33 root - INFO - Data frame has columns:31
+[ 2025-09-08 15:26:59,122 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-09-08 15:26:59,122 ] 65 root - INFO - Starting data transformation
+[ 2025-09-08 15:26:59,142 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-09-08 15:26:59,142 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-09-08 15:26:59,152 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-09-08 15:26:59,156 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-09-08 15:26:59,156 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-09-08 15:26:59,158 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-09-08 15:29:16,948 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaykumar079/networksecuritysystem "HTTP/1.1 200 OK"
+[ 2025-09-08 15:29:16,952 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaykumar079/networksecuritysystem"
+[ 2025-09-08 15:29:16,952 ] 107 dagshub - INFO - Repository sanjaykumar079/networksecuritysystem initialized!
+[ 2025-09-08 15:29:23,068 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaykumar079/networksecuritysystem "HTTP/1.1 200 OK"
+[ 2025-09-08 15:29:23,073 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaykumar079/networksecuritysystem"
+[ 2025-09-08 15:29:23,073 ] 107 dagshub - INFO - Repository sanjaykumar079/networksecuritysystem initialized!
+[ 2025-09-08 15:29:30,533 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-09-08 15:29:30,534 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-09-08 15:29:30,534 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-09-08 15:29:30,570 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-09-08 15:29:30,571 ] 153 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\09_08_2025_15_26_41\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9914962543024903, precision_score=0.9894928268337038, recall_score=0.9935078109149929), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9765372168284789, precision_score=0.9702572347266881, recall_score=0.9828990228013029))

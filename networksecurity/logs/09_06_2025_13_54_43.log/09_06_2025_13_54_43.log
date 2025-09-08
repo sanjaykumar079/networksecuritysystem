@@ -1,0 +1,25 @@
+[ 2025-09-06 13:54:46,306 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-09-06 13:54:46,309 ] 107 dagshub - INFO - Accessing as sanjaykumar079
+[ 2025-09-06 13:54:46,912 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sanjaykumar079/networksecuritysystem "HTTP/1.1 200 OK"
+[ 2025-09-06 13:54:47,451 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-09-06 13:54:47,453 ] 107 dagshub - INFO - Initialized MLflow to track repo "sanjaykumar079/networksecuritysystem"
+[ 2025-09-06 13:54:47,470 ] 107 dagshub - INFO - Repository sanjaykumar079/networksecuritysystem initialized!
+[ 2025-09-06 13:57:00,464 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:12:13,306 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:12:15,352 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:13:12,862 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:13:22,507 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:14:02,089 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:14:03,354 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:16:24,897 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:18:39,393 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:32:48,203 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:32:59,384 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:33:09,024 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:35:31,667 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:42:12,801 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:42:18,257 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:46:13,641 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 14:55:24,512 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 15:15:31,569 ] 42 root - INFO - Start data Ingestion
+[ 2025-09-06 15:15:44,806 ] 42 root - INFO - Start data Ingestion

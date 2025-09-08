@@ -20,7 +20,7 @@ from networksecurity.entity.config_entity import(
 from networksecurity.entity.artifact_entity import (
     DataIngestionArtifact,
     DataValidationArtifact,
-    DataTransformationArtifact,
+    DataTransformationArtifact, 
     ModelTrainerArtifact,
 )
 
@@ -108,16 +108,33 @@ class TrainingPipeline:
     
     def run_pipeline(self):
         try:
-            data_ingestion_artifact=self.start_data_ingestion()
-            data_validation_artifact=self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
-            data_transformation_artifact=self.start_data_transformation(data_validation_artifact=data_validation_artifact)
-            model_trainer_artifact=self.start_model_trainer(data_transformation_artifact=data_transformation_artifact)
-            
+            print("DEBUG: Starting Data Ingestion...")
+            data_ingestion_artifact = self.start_data_ingestion()
+            print("DEBUG: Data Ingestion completed")
+    
+            print("DEBUG: Starting Data Validation...")
+            data_validation_artifact = self.start_data_validation(data_ingestion_artifact)
+            print("DEBUG: Data Validation completed")
+    
+            print("DEBUG: Starting Data Transformation...")
+            data_transformation_artifact = self.start_data_transformation(data_validation_artifact)
+            print("DEBUG: Data Transformation completed")
+    
+            print("DEBUG: Starting Model Training...")
+            model_trainer_artifact = self.start_model_trainer(data_transformation_artifact)
+            print("DEBUG: Model Training completed")
+    
+            print("DEBUG: Syncing artifacts to S3...")
             self.sync_artifact_dir_to_s3()
             self.sync_saved_model_dir_to_s3()
-            
+    
+            print("DEBUG: Pipeline finished successfully!")
             return model_trainer_artifact
+    
         except Exception as e:
-            raise NetworkSecurityException(e,sys)
+            import traceback
+            print("PIPELINE ERROR:\n", traceback.format_exc())
+            raise
+
         
     

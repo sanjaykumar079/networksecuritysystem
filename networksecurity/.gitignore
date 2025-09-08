@@ -1,0 +1,23 @@
+# Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environment
+venv/
+ENV/
+.env
+
+# Logs and artifacts
+logs/
+artifacts/
+*.log
+
+# MLflow local runs
+mlruns/
+
+# OS files
+.DS_Store
+Thumbs.db

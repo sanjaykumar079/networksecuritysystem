@@ -47,19 +47,32 @@ app.add_middleware(
 from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates(directory="./templates")
 
+
+
+import traceback
+
+import traceback
+from fastapi import FastAPI
+
+app = FastAPI()
+
 @app.get("/", tags=["authentication"])
 async def index():
     return RedirectResponse(url="/docs")
 
-@app.get("/train")
-async def train_route():
+@app.get("/train", tags=["training"])   # ✅ keep GET here since Swagger shows GET
+def train_route():
     try:
-        train_pipeline=TrainingPipeline()
-        train_pipeline.run_pipeline()
-        return Response("Training is successful")
+        training_pipeline = TrainingPipeline()
+        training_pipeline.run_pipeline()
+        return {"message": "Training completed successfully!"}
     except Exception as e:
-        raise NetworkSecurityException(e,sys)
-    
+        return {
+            "error": str(e),
+            "traceback": traceback.format_exc()
+        }
+
+
 @app.post("/predict")
 async def predict_route(request: Request,file: UploadFile = File(...)):
     try:
